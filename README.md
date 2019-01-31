@@ -14,3 +14,6 @@ The tool can be placed either inside a recorded data folder of an experiment and
     s01;Target1;6912.452;Tab
     s01;Filler4;8002.461;A
     ...
+
+## ctrl-space.ahk
+[AutoHotKey](https://www.autohotkey.com/) script file to send **space key press** after pressing LCtrl and RCtrl keys. Used to allow continuing to next stimulus and recording subject decision at the same time in SMI ExperimentCenter. To allow usage of other keys, change the Key names in the scripts (valid key names can be found [here](https://www.autohotkey.com/docs/KeyList.htm)). 
