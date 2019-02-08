@@ -14,14 +14,13 @@ Tools for experiments and analysis of recorded data, including tools for process
 * Point to location of audio files to analyze. Selected directory should either contain only a set of _.wav_ files, or subdirectories containing a set of _.wav_ files each.
 * Output:
   1. CSV file with measured SOT data that looks like the following:
-  ```csv
-Item;SOT(Mean);SOT(Mean-sd);SOT(Pulse)
-C03-G01;7798;6358;7804
-C03-G02;5842;130;173
-C03-G03;7895;7239;7915
-C03-G04;5330;5058;5328
-C03-G05;5283;3059;5294
-```
+
+          Item;SOT(Mean);SOT(Mean-sd);SOT(Pulse)
+          C03-G01;7798;6358;7804
+          C03-G02;5842;130;173
+          C03-G03;7895;7239;7915
+          C03-G04;5330;5058;5328
+          C03-G05;5283;3059;5294
       "Item" is derived from the audio file name and should contain some form of identifier that allows you to map the data to a specific subject-stimulus pair (i.e., name your audio files accordingly), and the three following columns contain the measured time from the beginning of the file to the speech onset (measured/estimated with three methods, see below).
   2. Image file with graphs representing the wave signature of each audio file with lines signalling the measured times of the speech onset.
 
@@ -42,7 +41,7 @@ Extracts keypress events from the recorded data folders' log files (**_participa
 
 #### Usage
 The tool can be placed either inside a recorded data folder of an experiment and run, or called from command-line with the path to the recorded data folder as parameter. It scans the given folder for participant data folders (with names in SMI format like **_participant id_-\[_GUID_\]/**), and for each folder, scans the **stimulus-log.xml** file for stimulus IDs, then scans the **_participant id_-protocol.txt** for keypress log entries, mapping each event to the corresponding stimulus event. The timestamp of each event will be recalculated relative to stimulus onset. The output is a CSV file with one row for each keypress event, that looks like the following:
-```
+
     Subject ID;Stimulus Name;Stimulus time (ms);Key pressed
     s01;Filler1;7622.222;LeftCtrl
     s01;Filler2;7833.925;RightCtrl
@@ -50,7 +49,6 @@ The tool can be placed either inside a recorded data folder of an experiment and
     s01;Target1;6912.452;Tab
     s01;Filler4;8002.461;A
     ...
-```
 
 ## ahk scripts ([ahk/](tree/master/ahk/))
 [AutoHotKey](https://www.autohotkey.com/) script file to send **space key press** after pressing other keys (**LCtrl** and **RCtrl**, or **LShift** and **RShift** ). Used to trigger stimulus advancement and record subject decision at the same time in _SMI ExperimentCenter_. To allow usage of other keys, change the Key names in the scripts (valid key names can be found [here](https://www.autohotkey.com/docs/KeyList.htm)).
