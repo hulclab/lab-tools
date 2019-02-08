@@ -21,7 +21,7 @@ Tools for experiments and analysis of recorded data, including tools for process
           C03-G03;7895;7239;7915
           C03-G04;5330;5058;5328
           C03-G05;5283;3059;5294
-    "Item" is derived from the audio file name and should contain some form of identifier that allows you to map the data to a specific subject-stimulus pair (i.e., name your audio files accordingly), and the three following columns contain the measured time from the beginning of the file to the speech onset (measured/estimated with three methods, see below).
+      "Item" is derived from the audio file name and should contain some form of identifier that allows you to map the data to a specific subject-stimulus pair (i.e., name your audio files accordingly), and the three following columns contain the measured time from the beginning of the file to the speech onset (measured/estimated with three methods, see below).
   2. Image file with graphs representing the wave signature of each audio file with lines signalling the measured times of the speech onset.
 
   If you point the tool to a directory with audio files, one set of output files will be generated in the parent directory of that directory, named **_directory name_.csv** and **_directory name_.png** respectively; if the directory contains subdirectories, the tools expects those to contain a set of audio files each, and produces a set of output files each.
