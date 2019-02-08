@@ -23,8 +23,8 @@ Tools for experiments and analysis of recorded data, including tools for process
           C03-G05;5283;3059;5294
       "Item" is derived from the audio file name and should contain some form of identifier that allows you to map the data to a specific subject-stimulus pair (i.e., name your audio files accordingly), and the three following columns contain the measured time from the beginning of the file to the speech onset (measured/estimated with three methods, see below).
   2. Image file with graphs representing the wave signature of each audio file with lines signalling the measured times of the speech onset.
-  
-  ![graph examples](doc/praat_graph.png)
+
+    ![graph examples](doc/praat_graph.png)
 
   If you point the tool to a directory with audio files, one set of output files will be generated in the parent directory of that directory, named **_directory name_.csv** and **_directory name_.png** respectively; if the directory contains subdirectories, the tools expects those to contain a set of audio files each, and produces a set of output files each.
 * The tool estimates SOT by three methods and returns times in milliseconds from beginning of audio file. The first two values are calculated by looking for the first frame where audio intensity exceeds the mean intensity or mean intensity minus standard deviation respectively (measured over the whole file). The third value is determined by Praat's [glottal pulse detection](http://www.fon.hum.uva.nl/praat/manual/Voice.html) algorithm. Depending on the recording quality of your audio file in terms of amount of signal noise and ambient noise, any or none of these methods may produce accrate results. To check on the quality, you should always look at the generated graphs (PNG files) before choosing the value you want to use for further analysis.
