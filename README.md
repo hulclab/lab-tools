@@ -14,6 +14,7 @@ Tools for experiments and analysis of recorded data, including tools for process
 * Point to location of audio files to analyze. Selected directory should either contain only a set of _.wav_ files, or subdirectories containing a set of _.wav_ files each.
 * Output:
   1. CSV file with measured SOT data that looks like the following:
+
           Item;SOT(Mean);SOT(Mean-sd);SOT(Pulse)
           C03-G01;7798;6358;7804
           C03-G02;5842;130;173
