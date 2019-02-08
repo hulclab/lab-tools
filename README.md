@@ -25,6 +25,7 @@ Tools for experiments and analysis of recorded data, including tools for process
   2. Image file with graphs representing the wave signature of each audio file with lines signalling the measured times of the speech onset.
 
       ![graph examples](doc/praat_graph.png)
+      
       The blue line represents the mean intensity levle of the sound file; the green line represents the level of mean minus standard deviation intensity; the red line represents the timing of the first pulse measured by Praat's pulse detection (See below for details).
 
   If you point the tool to a directory with audio files, one set of output files will be generated in the parent directory of that directory, named **_directory name_.csv** and **_directory name_.png** respectively; if the directory contains subdirectories, the tools expects those to contain a set of audio files each, and produces a set of output files each.
