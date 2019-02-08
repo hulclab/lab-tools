@@ -20,7 +20,8 @@ C03-G01;7798;6358;7804
 C03-G02;5842;130;173
 C03-G03;7895;7239;7915
 C03-G04;5330;5058;5328
-C03-G05;5283;3059;5294```
+C03-G05;5283;3059;5294
+```
       "Item" is derived from the audio file name and should contain some form of identifier that allows you to map the data to a specific subject-stimulus pair (i.e., name your audio files accordingly), and the three following columns contain the measured time from the beginning of the file to the speech onset (measured/estimated with three methods, see below).
   2. Image file with graphs representing the wave signature of each audio file with lines signalling the measured times of the speech onset.
 
@@ -48,7 +49,9 @@ The tool can be placed either inside a recorded data folder of an experiment and
     s01;Filler3;5040.534;Add
     s01;Target1;6912.452;Tab
     s01;Filler4;8002.461;A
-    ...```
+    ...
+```
+
 ## ahk scripts ([ahk/](tree/master/ahk/))
 [AutoHotKey](https://www.autohotkey.com/) script file to send **space key press** after pressing other keys (**LCtrl** and **RCtrl**, or **LShift** and **RShift** ). Used to trigger stimulus advancement and record subject decision at the same time in _SMI ExperimentCenter_. To allow usage of other keys, change the Key names in the scripts (valid key names can be found [here](https://www.autohotkey.com/docs/KeyList.htm)).
 
